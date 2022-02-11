@@ -313,7 +313,7 @@ Jump.TextSize = 14.000
 Jump.TextStrokeTransparency = 0.000
 Jump.TextWrapped = true
 Jump.MouseButton1Down:connect(function()
-game.Players.LocalPlayer.Character.Humanoid.JumpHeight = 200
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 200
 end)
 
 
