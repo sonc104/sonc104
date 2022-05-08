@@ -203,6 +203,7 @@ end
 local library = {} -- main
 local page = {}
 local section = {}
+local nameofdacontainer
 
 do
 	library.__index = library
@@ -216,6 +217,7 @@ do
 			Name = title,
 			Parent = game.CoreGui
 		}, {
+		nameofdacontainer = title
 			utility:Create("ImageLabel", {
 				Name = "Main",
 				BackgroundTransparency = 1,
@@ -459,7 +461,7 @@ do
 	end
 	
   function library:Destroy()
-  library.container:Destroy()
+  game.CoreGui:FindFirstChild(nameofdacontainer):Destroy()
   end
   
 	function library:toggle()
