@@ -461,7 +461,7 @@ do
 	end
 	
   function library:Destroy()
-  game.CoreGui:FindFirstChild(nameofdacontainer):Destroy()
+  library:Destroy
   end
   
 	function library:toggle()
