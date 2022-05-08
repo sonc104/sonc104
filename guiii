@@ -456,10 +456,6 @@ do
 			end
 		end
 	end
-	
-  function library:Destroy()
-  library:Destroy
-  end
   
 	function library:toggle()
 	
