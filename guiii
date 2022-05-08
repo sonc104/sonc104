@@ -203,8 +203,6 @@ end
 local library = {} -- main
 local page = {}
 local section = {}
-local nameofdacontainer
-
 do
 	library.__index = library
 	page.__index = page
@@ -217,7 +215,6 @@ do
 			Name = title,
 			Parent = game.CoreGui
 		}, {
-		nameofdacontainer = title
 			utility:Create("ImageLabel", {
 				Name = "Main",
 				BackgroundTransparency = 1,
